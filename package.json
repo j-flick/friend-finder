@@ -1,0 +1,27 @@
+{
+  "name": "friend-finder",
+  "version": "1.0.0",
+  "description": "take a survey, find your best friend!",
+  "main": "server.js",
+  "scripts": {
+    "test": "none",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j-flick/friend-finder.git"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "justin flick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/j-flick/friend-finder/issues"
+  },
+  "homepage": "https://github.com/j-flick/friend-finder#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  }
+}
