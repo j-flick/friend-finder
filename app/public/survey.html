@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Find Your Gang - Survey</title>
+
+  <!-- Bootstrap CSS and JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Bowlby+One+SC|Barlow+Condensed:400,700" rel="stylesheet">
+
+  <!-- Font Awesome Glyphicons -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+  <!-- Chosen -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="jumbotron">
+      <h1 class="text-center">Find Your Gang</h1>
+      <img src="img/sunny.png" alt="Always Sunny Gang" id="banner" class="banner mx-auto d-block" />
+      <h3 class="text-center">Do you feel the need to be a part of something bigger?</h3>
+      <h3 class="text-center">A gang perhaps?</h3>
+    </div>
+
+    <div class="main px-2 py-3 mb-3">
+
+      <div class="col-sm-11 col-lg-10 mx-auto">
+
+        <h5 class="text-center">Fill this out first...</h5>
+        <h3>About You</h3>
+        <p class="mb-1">Name (Required)</p>
+        <input type="text" id="name" class="form-control mb-3" required>
+
+        <p class="mb-1">Link to Photo Image (Required)</p>
+        <input type="text" id="photo" class="form-control mb-3" required>
+
+      </div>
+
+    </div>
+
+    <div class="main px-2 py-3 mb-3">
+
+      <div class="col-sm-11 col-lg-10 mx-auto">
+
+        <h5 class="text-center mb-1">Take the Survey!</h5>
+        <p class="text-center small"><span><strong>Note: </strong></span> An answer of 3 is not "neutral." An efficient gang member is fully committed regardless of the inquiry.</p>
+
+          <p class="mb-1"><span class="numbers">#1 &nbsp;</span>You enjoy a good milk steak.</p>
+          <select class="chosen-select mb-3" id="q1">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+
+          <p class="mb-1"><span class="numbers">#2 &nbsp;</span>Magnets are a favorite pastime.</p>
+          <select class="chosen-select mb-3" id="q2">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+
+        <p class="mb-1"><span class="numbers">#3 &nbsp;</span>Green ghouls are funny.</p>
+        <select class="chosen-select mb-3" id="q3">
+          <option value=""></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <p class="mb-1"><span class="numbers">#4 &nbsp;</span>People should cover their knees if they are going to be walking around everywhere.</p>
+        <select class="chosen-select mb-3" id="q4">
+          <option value=""></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <p class="mb-1"><span class="numbers">#5 &nbsp;</span>Lethal Weapon 5's use of black-face was regrettable.</p>
+        <select class="chosen-select mb-3" id="q5">
+          <option value=""></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <p class="mb-1"><span class="numbers">#6 &nbsp;</span>Kitten mittens are very practical.</p>
+        <select class="chosen-select mb-3" id="q6">
+          <option value=""></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <p class="mb-1"><span class="numbers">#7 &nbsp;</span>"Spa" is an unfinished word.</p>
+        <select class="chosen-select mb-3" id="q7">
+          <option value=""></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <p class="mb-1"><span class="numbers">#8 &nbsp;</span>You would rather play Nightcrawlers than bash rats.</p>
+        <select class="chosen-select mb-3" id="q8">
+          <option value=""></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <p class="mb-1"><span class="numbers">#9 &nbsp;</span>The D.E.N.N.I.S. system is rather ineffective.</p>
+        <select class="chosen-select mb-3" id="q9">
+          <option value=""></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <p class="mb-1"><span class="numbers">#10 &nbsp;</span>Dayman > Nightman</p>
+        <select class="chosen-select mb-3" id="q10">
+          <option value=""></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <br>
+        <br>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
+        Submit</button>
+
+      </div>
+
+    </div>
+
+    <div class="spacer">
+    </div>
+
+  </div>
+
+  <footer class="footer text-center">
+    <div>
+      <p class="mb-0"><a href="/api/friends">Active Gang Members</a> | <a href="https://github.com/j-flick/friend-finder">GitHub Repo</a></p>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div id="results-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h2 class="modal-title"><strong>Best Match</strong></h2>
+        </div>
+        <div class="modal-body">
+          <h2 id="match-name"></h2>
+          <img id="match-img" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    // Chosen CSS
+    var config = {
+      ".chosen-select": {},
+      ".chosen-select-deselect": {
+        allow_single_deselect: true
+      },
+      ".chosen-select-no-single": {
+        disable_search_threshold: 10
+      },
+      ".chosen-select-no-results": {
+        no_results_text: "Oops, nothing found!"
+      },
+      ".chosen-select-width": {
+        width: "95%"
+      }
+    };
+
+    for (var selector in config) {
+      $(selector).chosen(config[selector]);
+    }
+
+    // Capture the form inputs
+    $("#submit").on("click", function(event) {
+      event.preventDefault();
+
+      // Form validation
+      function validateForm() {
+        var isValid = true;
+        $(".form-control").each(function() {
+          if ($(this).val() === "") {
+            isValid = false;
+          }
+        });
+
+        $(".chosen-select").each(function() {
+
+          if ($(this).val() === "") {
+            isValid = false;
+          }
+        });
+        return isValid;
+      }
+
+      // If all required fields are filled
+      if (validateForm()) {
+        // Create an object for the user"s data
+        var userData = {
+          name: $("#name").val(),
+          photo: $("#photo").val(),
+          scores: [
+          $("#q1").val(),
+          $("#q2").val(),
+          $("#q3").val(),
+          $("#q4").val(),
+          $("#q5").val(),
+          $("#q6").val(),
+          $("#q7").val(),
+          $("#q8").val(),
+          $("#q9").val(),
+          $("#q10").val()
+          ]
+        };
+
+        // AJAX post the data to the friends API.
+        $.post("/api/friends", userData, function(data) {
+
+          // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+          $("#match-name").text(data.name);
+          $("#match-img").attr("src", data.photo);
+
+          // Show the modal with the best match
+          $("#results-modal").modal("toggle");
+
+        });
+      } else {
+        alert("Please fill out all fields before submitting!");
+      }
+    });
+  </script>
+
+</body>
+
+</html>

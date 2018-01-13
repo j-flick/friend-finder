@@ -1,0 +1,134 @@
+h1 {
+	font-family: 'Bowlby One SC', cursive;
+	text-shadow: 2px 2px #fff6e0, -3px -3px 5px #fcab2c, 4px 5px 3px #fb9e29;
+	font-size: 2.1rem;
+}
+
+h3, .numbers {
+	font-family: 'Amatic SC', cursive;
+	font-size: 1.75rem;
+}
+
+.numbers {
+	vertical-align: sub;
+	font-weight: 800;
+}
+
+h5 {
+	font-family: 'Bowlby One SC', cursive;
+}
+
+.footer a {
+	color: #f25d23;
+	font-size: 0.8rem;
+}
+
+.container {
+	background-color: #faad2e;
+	min-height: calc(100vh - 45px);
+}
+
+.jumbotron {
+	padding: 1rem 0;
+	background-color: #fff9ea;
+	margin-bottom: 1rem;
+}
+
+.chosen-container, .chosen-select {
+	margin-bottom: 2rem;
+	width: 100%;
+}
+
+.main {
+	background-color: #fff9ea;
+	border-radius: 0.3rem;
+}
+
+body {
+	/*background-color: #fff9ea;*/
+	background-color: #ffd302;
+	margin-bottom: 45px; /* Margin bottom by footer height */
+	font-family: 'Barlow Condensed', sans-serif;
+	font-weight: 400;
+	/*min-height: calc(100vh - 45px);*/
+}
+
+.banner {
+	height: 76px;
+}
+
+.small {
+	font-size: 11px;
+}
+
+.spacer {
+	height: 30px;
+}
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 45px; /* Set the fixed height of the footer here */
+	line-height: 45px; /* Vertically center the text there */
+	background-color: #feec93;
+}
+
+.instructions {
+	text-align: justify;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 576px) {
+	.banner {
+		height: 120px;
+	}
+
+	h1 {
+		font-size: 3.2rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.banner {
+		height: 165px;
+	}
+
+	h1 {
+		font-size: 4.4rem;
+	}
+}
+
+@media (min-width: 992px) {
+	.banner {
+		height: 165px;
+	}
+
+	.instructions {
+		text-align: center;
+	}
+
+	h1 {
+		font-size: 4.4rem;
+	}
+}
+
+@media (min-width: 1200px) {
+	.banner {
+		height: 165px;
+	}
+
+	.instructions {
+		text-align: center;
+	}
+
+	h1 {
+		font-size: 4.4rem;
+	}
+}
