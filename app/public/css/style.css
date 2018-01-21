@@ -1,3 +1,6 @@
+body {
+	background-color: red;
+}
 h1 {
 	font-family: 'Bowlby One SC', cursive;
 	text-shadow: 2px 2px #fff6e0, -3px -3px 5px #fcab2c, 4px 5px 3px #fb9e29;
@@ -45,12 +48,10 @@ h5 {
 }
 
 body {
-	/*background-color: #fff9ea;*/
 	background-color: #ffd302;
 	margin-bottom: 45px; /* Margin bottom by footer height */
 	font-family: 'Barlow Condensed', sans-serif;
 	font-weight: 400;
-	/*min-height: calc(100vh - 45px);*/
 }
 
 .banner {

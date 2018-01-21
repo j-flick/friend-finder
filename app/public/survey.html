@@ -12,10 +12,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
-  <!-- Custom Styles -->
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Bowlby+One+SC|Barlow+Condensed:400,700" rel="stylesheet">
-
   <!-- Font Awesome Glyphicons -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
@@ -23,12 +19,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
 
+    <!-- Custom Styles -->
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Bowlby+One+SC|Barlow+Condensed:400,700" rel="stylesheet">
 </head>
 
 <body>
-
   <div class="container">
-
     <div class="jumbotron">
       <h1 class="text-center">Find Your Gang</h1>
       <img src="img/sunny.png" alt="Always Sunny Gang" id="banner" class="banner mx-auto d-block" />
@@ -37,25 +34,18 @@
     </div>
 
     <div class="main px-2 py-3 mb-3">
-
       <div class="col-sm-11 col-lg-10 mx-auto">
-
         <h5 class="text-center">Fill this out first...</h5>
         <h3>About You</h3>
         <p class="mb-1">Name (Required)</p>
         <input type="text" id="name" class="form-control mb-3" required>
-
         <p class="mb-1">Link to Photo Image (Required)</p>
         <input type="text" id="photo" class="form-control mb-3" required>
-
       </div>
-
     </div>
 
     <div class="main px-2 py-3 mb-3">
-
       <div class="col-sm-11 col-lg-10 mx-auto">
-
         <h5 class="text-center mb-1">Take the Survey!</h5>
         <p class="text-center small"><span><strong>Note: </strong></span> An answer of 3 is not "neutral." An efficient gang member is fully committed regardless of the inquiry.</p>
 
@@ -167,7 +157,6 @@
         Submit</button>
 
       </div>
-
     </div>
 
     <div class="spacer">
@@ -188,12 +177,12 @@
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
           <h2 class="modal-title"><strong>Best Match</strong></h2>
         </div>
         <div class="modal-body">
           <h2 id="match-name"></h2>
-          <img id="match-img" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">
+          <img id="match-img" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" class="mx-auto d-block" width="80%" alt="">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -285,5 +274,4 @@
   </script>
 
 </body>
-
 </html>
